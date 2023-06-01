@@ -37,14 +37,18 @@ body{
 }
 
 .nav-item{
-    /* margin: 0rem 14rem; */
     display: flex;
     align-content: center;
     flex-wrap: wrap;
 }
 .contacto{
-    padding: 8rem 25rem;
+    padding: 0.7em 2em;
     background-color: #B23A48;
     color: white;
     border-radius: 50rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
