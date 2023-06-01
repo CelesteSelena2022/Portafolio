@@ -2,22 +2,28 @@
     font-family: 'Montserrat', sans-serif;
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+}
+html,
+body {
+    min-height: 100vh;
 }
 html{
     font-size: 1px;
 }
 body{
-    min-height: 100%;
     width: 100%;
-    display: flex;
     flex-direction: column;
+    font-size: 12rem;
 }
 
-.container-header{
+.is-flex{
     display: flex;
-    width: 100%;
+}
+
+.contenedor-header{
     justify-content: center;
-    font-size: 12rem;
+    width: 100%;
     box-shadow: #BB4D00 0px 25px 20px -20px;
     background-color: #FBBA72;
     position: relative;
@@ -25,14 +31,12 @@ body{
 }
 
 .nav-header{
-    display: flex;
     justify-content: end;
     height: 70rem;
     width: 77%;
 }
 
 .nav-lista{
-    display: flex;
     list-style: none;
     align-content: center;
     justify-content: space-between;
@@ -41,7 +45,6 @@ body{
 }
 
 .nav-item{
-    display: flex;
     align-content: center;
     flex-wrap: wrap;
 }
@@ -58,19 +61,23 @@ a {
 }
 
 .contenedor-principal{
-    display: flex;
+    justify-content: center;
     width: 100%;
     background-color: #FBBA72;
 }
+
+.contenedor{
+    flex-basis: 900rem;
+}
+
 .contenedor-presentacion{
-    font-size: 15rem;
-    display: flex;
     width: 100%;
+    height: 100%;
+    justify-content:space-evenly;
+    margin: 3em 0em;
 }
 
 .nombre-presentacion{
-    width: 50%;
-    display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -78,13 +85,10 @@ a {
 }
 
 .imagen-presentacion{
-    display: flex;
-    width: 50%;
     justify-content: center;
 }
 
 .contenedor-imagen{
-    display: flex;
     flex-basis: 400rem;
 }
 
@@ -96,31 +100,36 @@ img{
 .big-800{
     font-size: 24rem;
     font-weight: 800;
+    color: #691E06;
 }
 
 .big-900{
     font-weight: 900;
     font-size: 40rem;
+    color: #BB4D00;
 }
 
 p{
     font-size: 13rem;
+    color: #691E06;
 }
 
 .buttom-proyectos{
-    display: flex;
     justify-content: center;
     background-color: #BB4D00;
-    width: 25%;
-    padding: 10px;
+    width: 30%;
+    padding: 1em;
     border-radius: 50rem;
     color: white;
 }
 
 .margin-bottom{
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 
 .margin-top{
-    margin-top: 30px;
+    margin-top: 2em;
 }
+
+
+
