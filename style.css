@@ -21,6 +21,18 @@ body{
     display: flex;
 }
 
+
+.big-900{
+    font-weight: 900;
+    font-size: 40rem;
+    color: #BB4D00;
+}
+
+.big-800{
+    font-size: 24rem;
+    font-weight: 800;
+}
+
 .contenedor-header{
     justify-content: center;
     width: 100%;
@@ -61,20 +73,19 @@ a {
 }
 
 .contenedor-principal{
-    justify-content: center;
-    width: 100%;
-    background-color: #FBBA72;
+    flex-direction: column;
 }
 
 .contenedor{
-    flex-basis: 900rem;
-}
-
-.contenedor-presentacion{
     width: 100%;
     height: 100%;
+    padding: 3em 0em;
+}
+
+.presentacion{
     justify-content:space-evenly;
-    margin: 3em 0em;
+    background-color: #FBBA72;
+    justify-content: center;
 }
 
 .nombre-presentacion{
@@ -97,19 +108,12 @@ img{
     height: 100%;
 }
 
-.big-800{
-    font-size: 24rem;
-    font-weight: 800;
+
+span{
     color: #691E06;
 }
 
-.big-900{
-    font-weight: 900;
-    font-size: 40rem;
-    color: #BB4D00;
-}
-
-p{
+.decripcion-presentacion{
     font-size: 13rem;
     color: #691E06;
 }
@@ -129,6 +133,34 @@ p{
 
 .margin-top{
     margin-top: 2em;
+}
+
+.conocimientos{
+    background-color: #8F250C;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: white;
+}
+
+.items-conocimientos{
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-conocimientos{
+    flex-direction: column;
+    width: 28%;
+    padding: 3em 0em;
+    border: 1px solid white;
+    border-radius: 8rem;
+    margin: 1em;
+}
+
+.fa-brands{
+    font-size: 65rem;
 }
 
 
