@@ -140,7 +140,7 @@ img{
 }
 
 .items{
-    width: 80%;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -252,7 +252,6 @@ h2{
 }
 
 .item-proyectos{
-    width:240rem;
-
+    width:280rem;
 }
 
