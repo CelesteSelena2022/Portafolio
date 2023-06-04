@@ -43,9 +43,7 @@ body{
 }
 
 /* width para los contenedores */
-.contenedor-95{
-    width: 95%;
-}
+
 .contenedor-85{
     width: 85%;
 }
@@ -141,7 +139,7 @@ a {
 }
 
 .contenedor-img{
-    flex-basis: 400rem;
+    flex-basis: 380rem;
 }
 
 /* clase reutilizable */
@@ -265,14 +263,22 @@ img{
     text-align: center;
 }
 
+.contenido-proyectos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .titulo-proyectos{
     font-weight: 800;
     color: #691E06;
     font-size: 35rem;
 }
 
-.item-proyectos{
-    width:280rem;
+.descripcion-proyectos{
+    width: 40%;
+    color: #691E06;
+    font-size: 16rem ;
 }
 
 /* 
@@ -293,6 +299,40 @@ img{
 }
 */
 
-.contenido-items{
+.item-proyectos{
+    width:280rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-items{
+    width: 95%;
+    max-width: 1000rem;
+    display: flex;    
+    flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.contenedor-img-item{
+    height: 80%;
+}
+
+.nombre-item{
+    flex-grow: 1;
+    font-size: 14rem;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+/* .prueba{
+    padding: 0.5em 0.5em 0em 0.5em;
+} */
+
+/* fin de estilos de la seccion de proyectos */
+
+/* inicio de estilos de la seccion de formulario */
