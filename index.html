@@ -12,7 +12,7 @@
         rel="stylesheet">
         <script src="https://kit.fontawesome.com/89233235c8.js" crossorigin="anonymous"></script>
 </head>
-<body class="is-flex">
+<body>
     <header class="contenedor-header is-flex">
         <nav class="nav-header is-flex">
             <ul class="nav-lista is-flex">
@@ -39,40 +39,43 @@
             </ul>
         </nav>
     </header>
-    <main class="contenedor-principal is-flex">
+    <main>
         <!-- comienza seccion de presentacion -->
-        <section class="contenedor presentacion is-flex">
-            <div class="nombre-presentacion is-flex">
-                <span class="bold-800 margin-bottom">
+        <section class="contenedor-general presentacion is-flex">
+            <div class="contenido-nombre">
+                <span class="bold-800 margin-bottom bienvenida-presentacion">
                     ¡Hola! Soy
                 </span>
-                <h1 class="bold-900 margin-bottom nombre">
+                <h1 class="bold-900 margin-bottom nombre-presentacion">
                     Celeste Muñoz
                 </h1>
                 <p class="descripcion">
                     Desarrolladora Front-End, fan de la musica clasica y de la naturaleza
                 </p>
-                <a href="PROYECTOS" class="buttom-proyectos margin-top is-flex">
+                <a href="PROYECTOS" class="buttom-presentacion margin-top">
                     LO QUE HAGO
                 </a>
             </div>
-            <div class="imagen-presentacion is-flex">
-                <div class="contenedor-imagen is-flex">
-                    <img src="./img/ultima.png" alt="imagen de presentacion donde una persona se encuentra escribiendo codigo" class="img-principal">
+            <div class="contenido-imagen">
+                <div class="contenedor-img">
+                    <img src="./img/ultima.png"
+                        alt="imagen de presentacion donde una persona se encuentra escribiendo codigo"
+                        class="img-presentacion">
                 </div>
             </div>
         </section>
         <!-- comienza seccion de conocimientos -->
-        <section class="contenedor conocimientos">
-            <div class="presentacion-conocimientos is-flex">
+        <section class="contenedor-general conocimientos">
+            <div class="contenido-conocimientos">
                 <h2 class="bold-800 margin-bottom">
                     Mis conocimientos
                 </h2>
                 <p class="descripcion-conocimientos margin-bottom">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel ab quas
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur
+                    vel ab quas
                     architecto.
                 </p>
-                <div class="items is-flex">
+                <div class="items contenedor-85">
                     <figure class="item icon-conocimientos ">
                         <i class="fa-brands fa-html5"></i>
                         <figcaption class="bold-700 icon-nombre">
@@ -113,13 +116,15 @@
             </div>
         </section>
         <!-- comienzo de la seccion de cita -->
-        <section class="contenedor cita">
-            <div class="contenedor-cita">
+        <section class="contenedor-general cita">
+            <div class="contenedor-85">
                 <span class="titulo-cita bold-900">
                     <i class="fa-solid fa-quote-right"></i>
                 </span>
                 <p class="descripcion-cita margin-top">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore temporibus fugit accusamus natus ab reiciendis, excepturi eligendi odio sint commodi accusantium delectus adipisci distinctio ipsum tempore alias nam iste minima?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore temporibus fugit accusamus natus ab
+                    reiciendis, excepturi eligendi odio sint commodi accusantium delectus adipisci distinctio ipsum
+                    tempore alias nam iste minima?
                 </p>
                 <p class="bold-800 margin-top autor-cita">
                     Someone
@@ -127,15 +132,16 @@
             </div>
         </section>
         <!-- comienzo de la seccion proyectos -->
-        <section class="contenedor proyectos">
-            <div class="contenedor-proyectos">
-                <h2>
+        <section class="contenedor-general proyectos">
+            <div class="contenedor-95 ">
+                <h2 class="titulo-proyectos">
                     Mis proyectos
                 </h2>
                 <p class="descripcion">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id,
+                    nesciunt?
                 </p>
-                <div class="items is-flex">
+                <div class="items contenido-items">
                     <article class="item item-proyectos">
                         <div class="contenedor-imagen">
                             <img src="./img/portfolio.jpg" alt="imagen de portada del portfolio">

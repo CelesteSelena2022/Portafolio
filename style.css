@@ -14,10 +14,16 @@ html{
 }
 body{
     width: 100%;
-    flex-direction: column;
     font-size: 12rem;
 }
 
+.contenedor-general{
+    width: 100%;
+    height: 100%;
+    padding: 8em 4em;
+}
+
+/* clase para contenedores que tendran un cambio */
 .is-flex{
     display: flex;
 }
@@ -26,26 +32,30 @@ body{
 .bold-600{
     font-weight: 600;
 }
-
 .bold-700{
     font-weight: 700;
 }
 .bold-800{
     font-weight: 800;
 }
-
 .bold-900{
     font-weight: 900;
 }
 
-span{
-    font-size: 24rem;
-    color: #691E06;
+/* width para los contenedores */
+.contenedor-95{
+    width: 95%;
+}
+.contenedor-85{
+    width: 85%;
 }
 
-.nombre{
-    font-size: 40rem;
-    color: #BB4D00;
+/* margenes bottom y top para usar en los elementos */
+.margin-bottom{
+    margin-bottom: 0.5em;
+}
+.margin-top{
+    margin-top: 2em;
 }
 
 .contenedor-header{
@@ -87,37 +97,36 @@ a {
     color: inherit;
 }
 
-.contenedor-principal{
-    flex-direction: column;
+/* inicio de estilos de la seccion de presentacion */
+.presentacion{
+    background-color: #FBBA72;
 }
 
-.presentacion{
-    justify-content:space-evenly;
-    background-color: #FBBA72;
+.contenido-nombre{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.bienvenida-presentacion{
+    font-size: 24rem;
+    color: #691E06;
 }
 
 .nombre-presentacion{
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    font-size: 40rem;
+    color: #BB4D00;
 }
 
-.imagen-presentacion{
-    justify-content: center;
+/* clase reutilizable */
+.descripcion{
+    color: #691E06;
+    font-size: 16rem ;
 }
+/* --------------- */
 
-.contenedor-imagen{
-    flex-basis: 400rem;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-.buttom-proyectos{
+.buttom-presentacion{
+    display: flex;
     justify-content: center;
     background-color: #BB4D00;
     width: 30%;
@@ -126,23 +135,57 @@ img{
     color: white;
 }
 
-.margin-bottom{
-    margin-bottom: 0.5em;
+.contenido-imagen{
+    display: flex;
+    justify-content: center;
 }
 
-.margin-top{
-    margin-top: 2em;
+.contenedor-img{
+    flex-basis: 400rem;
 }
+
+/* clase reutilizable */
+img{
+    width: 100%;
+    height: 100%;
+}
+/* --------------- */
+
+.img-presentacion{
+    border-radius: 50%;
+    border-style: double;
+    border-width: 7rem;
+    border-color: #8F250C;
+}
+/* fin de estilos de la seccion de presentacion */
+
+/* inicio de estilos de la seccion de conocimientos */
 
 .conocimientos{
     background-color: #fbb05b ;
-    flex-wrap: wrap;
+}
+
+.contenido-conocimientos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.descripcion-conocimientos{
+    width: 30%;
+    color: #691E06;
 }
 
 .items{
-    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.item-conocimientos{
+    width: 85%;
 }
 
 .item{
@@ -156,7 +199,12 @@ img{
 .icon-conocimientos{
     width: 210rem;
 }
-/* estilo de iconos (color y tamaño) */
+/* estilos de iconos de la seccion de conocimientos (color y tamaño) */
+.icon-nombre{
+    font-size: 15rem;
+    margin-top: 0.5em;
+    color: #691E06;
+}
 .fa-brands{
     font-size: 65rem;
 }
@@ -178,38 +226,10 @@ img{
 .fa-git-alt{
     color: #f34f29;
 }
-.icon-nombre{
-    font-size: 15rem;
-    margin-top: 0.5em;
-    color: #691E06;
-}
 
-.descripcion-conocimientos{
-    width: 30%;
-    color: #691E06;
-}
+/* fin de estilos de la seccion de conocimientos */
 
-.presentacion-conocimientos{
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-}
-.img-principal{
-    border-radius: 50%;
-    border-style: double;
-    border-width: 7rem;
-    border-color: #8F250C;
-}
-
-.contenedor{
-    width: 100%;
-    height: 100%;
-    padding: 8em 4em;
-}
-
+/* inicio de estilos de la seccion de cita */
 .cita{
     display: flex;
     justify-content: center;
@@ -218,13 +238,12 @@ img{
     color: white;
 }
 
-.contenedor-cita{
-    width: 70%;
+.contenido-cita{
+    width: 85%;
 }
 
 .titulo-cita{
     font-size: 80rem;
-    color:white
 }
 
 .descripcion-cita{
@@ -235,17 +254,18 @@ img{
     font-size: 23rem;
 }
 
-.descripcion{
-    color: #691E06;
-    font-size: 16rem ;
-}
+/* fin de estilos de la seccion de cita */
+
+/* inicio de estilos de la seccion de proyectos */
 
 .proyectos {
     background-color: #FBBA72;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-h2{
+.titulo-proyectos{
     font-weight: 800;
     color: #691E06;
     font-size: 35rem;
@@ -255,3 +275,24 @@ h2{
     width:280rem;
 }
 
+/* 
+-----recordatorio--------
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.item{
+    padding: 3em 0em;
+    border: 1px solid #BB4D00;
+    border-radius: 8rem;
+    margin: 1em;
+    background-color: white;
+}
+*/
+
+.contenido-items{
+    justify-content: space-between;
+}
