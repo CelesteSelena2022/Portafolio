@@ -336,3 +336,87 @@ img{
 /* fin de estilos de la seccion de proyectos */
 
 /* inicio de estilos de la seccion de formulario */
+
+.contacto{
+    background-color: #fbb05b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-contacto{
+    background-color: white;
+    padding: 4em;
+    border-radius: 12rem;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.contenido-contacto{
+    width: 40%;
+}
+
+.titulo-contacto{
+    font-size: 35rem;
+}
+
+ul{
+    list-style: none;
+}
+/* estilos de form */
+
+fieldset{
+    border: transparent;
+}
+
+.nombre-apellido-form{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nombre-from{
+    width: 45%;
+    flex-direction: column;
+    display: flex;
+}
+
+.apellido-from{
+    width: 45%;
+    flex-direction: column;
+    display: flex;
+}
+
+input{
+    width: 100%;
+    border-radius: 12rem;
+    border: none;
+    background-color: #f6f7fb;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form textarea, input {
+    margin: 0.5em 0em 1em 0em;
+    padding: 0.5em;
+}
+
+textarea {
+    width: 100%;
+    height: 150rem;
+    border-radius: 12rem;
+    background-color: #f6f7fb;
+    border: none;
+}
+
+.buttom-enviar{
+    width: 30%;
+    padding: 0.8em 0.5em;
+    border-radius: 30rem;
+    background-color: #BB4D00;
+    color: white;
+}
+
+/* fin de estilos de la seccion de formulario */
