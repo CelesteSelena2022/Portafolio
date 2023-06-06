@@ -10,29 +10,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;800;900&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/89233235c8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/89233235c8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="contenedor-header is-flex">
         <nav class="nav-header is-flex">
             <ul class="nav-lista is-flex">
                 <li class="nav-item is-flex">
-                    <a href="HOLA">
+                    <a href="#HOLA">
                         HOLA
                     </a>
                 </li>
                 <li class="nav-item is-flex">
-                    <a href="CONOCIMIENTOS">
+                    <a href="#CONOCIMIENTOS">
                         CONOCIMIENTOS
                     </a>
                 </li>
                 <li class="nav-item is-flex">
-                    <a href="PROYECTOS">
+                    <a href="#PROYECTOS">
                         PROYECTOS
                     </a>
                 </li>
                 <li class="nav-item buttom-contacto is-flex">
-                    <a href="CONTACTO">
+                    <a href="#CONTACTO">
                         CONTACTO
                     </a>
                 </li>
@@ -41,7 +41,7 @@
     </header>
     <main>
         <!-- comienza seccion de presentacion -->
-        <section class="contenedor-general presentacion is-flex">
+        <section class="contenedor-general presentacion is-flex" id="HOLA">
             <div class="contenido-nombre">
                 <span class="bold-800 margin-bottom bienvenida-presentacion">
                     ¡Hola! Soy
@@ -52,7 +52,7 @@
                 <p class="descripcion">
                     Desarrolladora Front-End, fan de la musica clasica y de la naturaleza
                 </p>
-                <a href="PROYECTOS" class="buttom-presentacion margin-top">
+                <a href="#PROYECTOS" class="buttom-presentacion margin-top">
                     LO QUE HAGO
                 </a>
             </div>
@@ -65,7 +65,7 @@
             </div>
         </section>
         <!-- comienza seccion de conocimientos -->
-        <section class="contenedor-general conocimientos">
+        <section class="contenedor-general conocimientos" id="CONOCIMIENTOS">
             <div class="contenido-conocimientos">
                 <h2 class="bold-800 margin-bottom">
                     Mis conocimientos
@@ -132,7 +132,7 @@
             </div>
         </section>
         <!-- comienzo de la seccion proyectos -->
-        <section class="contenedor-general proyectos">
+        <section class="contenedor-general proyectos" id="PROYECTOS">
             <div class="contenido-proyectos">
                 <h2 class="titulo-proyectos margin-bottom">
                     Mis proyectos
@@ -141,68 +141,83 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id,
                     nesciunt?
                 </p>
+                <!-- proyectos -->
                 <div class="contenedor-items items margin-top ">
-                    <article class="item item-proyectos">
-                        <div class="contenedor-img-item">
-                            <img src="./img/portfolio.jpg" alt="imagen de portada del portfolio">
-                        </div>
-                        <p class="bold-600 centrado nombre-item">
-                            Portfolio
-                        </p>
-                    </article>
-                    <article class="item item-proyectos">
-                        <div class="contenedor-img-item">
-                            <img src="./img/generador de memes.jpg" alt="">
-                        </div>
-                        <p class="bold-600 centrado nombre-item">
-                            Generador de memes
-                        </p>
-                    </article>
-                    <article class="item item-proyectos">
-                        <div class="contenedor-img-item">
-                            <img src="./img/match 3.jpg" alt="">
-                        </div>
-                        <p class="bold-600 centrado nombre-item">
-                            Match 3
-                        </p>
-                    </article>
-                    <article class="item item-proyectos">
-                        <div class="contenedor-img-item">
-                            <img src="./img/controlador de gastos.jpg" alt="">
-                        </div>
-                        <p class="bold-600 centrado nombre-item">
-                            Controlador de gastos
-                        </p>
-                    </article>
-                    <article class="item item-proyectos">
-                        <div class="contenedor-img-item">
-                            <img src="./img/administrador de reuniones.jpg" alt="">
-                        </div>
-                        <h3 class="bold-600 centrado nombre-item">
-                            Administrador de reuniones
+                    <a href="https://celesteselena2022.github.io/Portafolio/" target="_blank">
+                        <article class="item item-proyectos">
+                            <div class="contenedor-img-item">
+                                <img src="./img/portfolio.jpg" alt="imagen de portada del portfolio">
+                            </div>
+                            <p class="bold-600 centrado nombre-item">
+                                Portfolio
                             </p>
-                    </article>
-                    <article class="item item-proyectos">
-                        <div class="contenedor-img-item">
-                            <img src="./img/todo app.jpg" alt="">
-                        </div>
-                        <p class="bold-600 centrado nombre-item">
-                            Todo app
-                        </p>
-                    </article>
-                    <article class="item item-proyectos">
-                        <div class="contenedor-img-item">
-                            <img src="./img/buscador de peliculas.jpg" alt="">
-                        </div>
-                        <p class="bold-600 centrado nombre-item">
-                            Buscador de peliculas
-                        </p>
-                    </article>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="item item-proyectos">
+                            <div class="contenedor-img-item">
+                                <img src="./img/generador de memes.jpg" alt="">
+                            </div>
+                            <p class="bold-600 centrado nombre-item">
+                                Generador de memes
+                            </p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="item item-proyectos">
+                            <div class="contenedor-img-item">
+                                <img src="./img/match 3.jpg" alt="">
+                            </div>
+                            <p class="bold-600 centrado nombre-item">
+                                Match 3
+                            </p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="item item-proyectos">
+                            <div class="contenedor-img-item">
+                                <img src="./img/controlador de gastos.jpg" alt="">
+                            </div>
+                            <p class="bold-600 centrado nombre-item">
+                                Controlador de gastos
+                            </p>
+                        </article>
+                    </a>
+                    <a href="">
+                        <article class="item item-proyectos">
+                            <div class="contenedor-img-item">
+                                <img src="./img/administrador de reuniones.jpg" alt="">
+                            </div>
+                            <h3 class="bold-600 centrado nombre-item">
+                                Administrador de reuniones
+                                </p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="item item-proyectos">
+                            <div class="contenedor-img-item">
+                                <img src="./img/todo app.jpg" alt="">
+                            </div>
+                            <p class="bold-600 centrado nombre-item">
+                                Todo app
+                            </p>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="item item-proyectos">
+                            <div class="contenedor-img-item">
+                                <img src="./img/buscador de peliculas.jpg" alt="">
+                            </div>
+                            <p class="bold-600 centrado nombre-item">
+                                Buscador de peliculas
+                            </p>
+                        </article>
+                    </a>
                 </div>
             </div>
         </section>
         <!-- comienzo de la seccion formulario -->
-        <section class="contenedor-general contacto">
+        <section class="contenedor-general contacto" id="CONTACTO">
             <div class="contenedor-contacto is-flex">
                 <div class="contenido-contacto">
                     <h2 class="bold-800 titulo-contacto margin-bottom">
@@ -268,37 +283,45 @@
         <!-- navegacion del footer -->
         <ul class="nav-pie">
             <li class="item-pie">
-                HOLA
+                <a href="#HOLA">
+                    HOLA
+                </a>
             </li>
             <li class="item-pie">
-                CONOCIMIENTOS
+                <a href="#CONOCIMIENTOS">
+                    CONOCIMIENTOS
+                </a>
             </li>
             <li class="item-pie">
-                PROYECTOS
+                <a href="#PROYECTOS">
+                    PROYECTOS
+                </a>
             </li>
             <li class="item-pie">
-                CONTACTO
+                <a href="#CONTACTO">
+                    CONTACTO
+                </a>
             </li>
         </ul>
         <!-- redes sociales del footer -->
         <ul class="redes-footer margin-top">
             <li>
-                <a class="contenedor-icon" href="#">
+                <a class="contenedor-icon" href="https://www.facebook.com/selee.munoz.31/">
                     <i class="fa-brands fa-facebook-f icon-redes"></i>
                 </a>
             </li>
             <li>
-                <a class="contenedor-icon" href="">
+                <a class="contenedor-icon" href="https://github.com/CelesteSelena2022">
                     <i class="fa-brands fa-github-alt icon-redes"></i>
                 </a>
             </li>
             <li>
-                <a class="contenedor-icon" href="">
+                <a class="contenedor-icon" href="https://www.linkedin.com/in/celeste-selena-mu%C3%B1oz/">
                     <i class="fa-brands fa-linkedin-in icon-redes"></i>
                 </a>
             </li>
             <li>
-                <a class="contenedor-icon" href="">
+                <a class="contenedor-icon" href="https://mail.google.com/mail/u/0/?pli=1#inbox">
                     <i class="fa-solid fa-envelope icon-redes"></i>
                 </a>
             </li>

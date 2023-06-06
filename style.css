@@ -301,6 +301,7 @@ img{
 
 .item-proyectos{
     width:280rem;
+    height: 290rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
