@@ -420,3 +420,45 @@ textarea {
 }
 
 /* fin de estilos de la seccion de formulario */
+
+/* inicio de estilos del footer */
+
+.pie-de-pag{
+    background-color: #BB4D00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-pie{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-pie{
+    margin: 0em 1em;
+}
+
+.redes-footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenedor-icon{
+    background-color: white;
+    padding: 1em;
+    width: 35rem;
+    height: 35rem;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 50%;
+    margin: 0em 1em;
+}
+
+.icon-redes{
+    font-size: 15rem;
+}
+
+/* fin de estilos del footer */
