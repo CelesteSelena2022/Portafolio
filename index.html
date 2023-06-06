@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Celeste Muñoz</title>
+    <title>Portfolio de Celeste Muñoz</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89233235c8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="contenedor-header is-flex">
-        <nav class="nav-header is-flex">
-            <ul class="nav-lista is-flex">
-                <li class="nav-item is-flex">
-                    <a href="#HOLA">
+    <header class="contenedor-header">
+        <nav class="nav-header">
+            <!-- lista de navegacion de nav -->
+            <ul class="nav-lista">
+                <li>
+                    <a href="#HOLA" class="bold-600">
                         HOLA
                     </a>
                 </li>
-                <li class="nav-item is-flex">
-                    <a href="#CONOCIMIENTOS">
+                <li>
+                    <a href="#CONOCIMIENTOS" class="bold-600">
                         CONOCIMIENTOS
                     </a>
                 </li>
-                <li class="nav-item is-flex">
-                    <a href="#PROYECTOS">
+                <li>
+                    <a href="#PROYECTOS" class="bold-600">
                         PROYECTOS
                     </a>
                 </li>
-                <li class="nav-item buttom-contacto is-flex">
-                    <a href="#CONTACTO">
+                <li class="buttom">
+                    <a href="#CONTACTO" class="bold-600">
                         CONTACTO
                     </a>
                 </li>
@@ -43,7 +43,7 @@
         <!-- comienza seccion de presentacion -->
         <section class="contenedor-general presentacion is-flex" id="HOLA">
             <div class="contenido-nombre">
-                <span class="bold-800 margin-bottom bienvenida-presentacion">
+                <span class="bold-800 bienvenida-presentacion">
                     ¡Hola! Soy
                 </span>
                 <h1 class="bold-900 margin-bottom nombre-presentacion">
@@ -52,7 +52,7 @@
                 <p class="descripcion">
                     Desarrolladora Front-End, fan de la musica clasica y de la naturaleza
                 </p>
-                <a href="#PROYECTOS" class="buttom-presentacion margin-top">
+                <a href="#PROYECTOS" class="buttom buttom-presentacion margin-top bold-600">
                     LO QUE HAGO
                 </a>
             </div>
@@ -67,14 +67,15 @@
         <!-- comienza seccion de conocimientos -->
         <section class="contenedor-general conocimientos" id="CONOCIMIENTOS">
             <div class="contenido-conocimientos">
-                <h2 class="bold-800 margin-bottom">
+                <h2 class="bold-800 margin-bottom titulo">
                     Mis conocimientos
                 </h2>
-                <p class="descripcion-conocimientos margin-bottom">
+                <p class="descripcion descripcion-conocimientos margin-bottom">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur
                     vel ab quas
                     architecto.
                 </p>
+                <!-- mis conocimientos -->
                 <div class="items contenedor-85">
                     <figure class="item icon-conocimientos ">
                         <i class="fa-brands fa-html5"></i>
@@ -121,7 +122,7 @@
                 <span class="titulo-cita bold-900">
                     <i class="fa-solid fa-quote-right"></i>
                 </span>
-                <p class="descripcion-cita margin-top">
+                <p class="descripcion margin-top">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore temporibus fugit accusamus natus ab
                     reiciendis, excepturi eligendi odio sint commodi accusantium delectus adipisci distinctio ipsum
                     tempore alias nam iste minima?
@@ -134,10 +135,10 @@
         <!-- comienzo de la seccion proyectos -->
         <section class="contenedor-general proyectos" id="PROYECTOS">
             <div class="contenido-proyectos">
-                <h2 class="titulo-proyectos margin-bottom">
+                <h2 class="titulo bold-800 margin-bottom">
                     Mis proyectos
                 </h2>
-                <p class="descripcion-proyectos margin-bottom">
+                <p class="descripcion descripcion-proyectos margin-bottom">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id,
                     nesciunt?
                 </p>
@@ -223,23 +224,24 @@
                     <h2 class="bold-800 titulo-contacto margin-bottom">
                         Contactame
                     </h2>
-                    <p>
+                    <p class="descripcion">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id,
                         nesciunt?
                         Modi
                         quasi repudiandae quam hic quo, qui cumque nam voluptates, ipsam, tempora eaque numquam eligendi.
                     </p>
+                    <!-- redes sociales de contacto -->
                     <ul class="margin-top">
-                        <li class="margin-bottom">
+                        <li class="margin-bottom icon-contacto">
                             Selee Muñoz
                         </li>
-                        <li class="margin-top">
+                        <li class="margin-top icon-contacto">
                             CelesteSelena2022
                         </li>
-                        <li class="margin-top">
+                        <li class="margin-top icon-contacto">
                             Celeste Selena Muñoz
                         </li>
-                        <li class="margin-top">
+                        <li class="margin-top icon-contacto">
                             selenamunoz196@gmail.com
                         </li>
                     </ul>
@@ -250,26 +252,25 @@
                         <fieldset>
                             <legend class="bold-800 titulo-contacto margin-bottom">Escribeme</legend>
                             <div class="is-flex nombre-apellido-form">
-                                <div class="nombre-from">
+                                <div class="contenedor-nombre column">
                                     <label for="nombre" class="bold-600">Nombre *</label>
                                     <input type="text" id="nombre" name="nombre" placeholder="p. ej.: Ada" required>
                                 </div>
-                                <div class="apellido-from">
+                                <div class="apellido-from column contenedor-nombre">
                                     <label for="apellido" class="bold-600">Apellido *</label>
                                     <input type="text" id="apellido" name="apellido" placeholder="p. ej.: Lovelace" required>
                                 </div>
                             </div>
-                            <div class="email-form">
+                            <div class="column">
                                 <label for="email" class="bold-600">Email *</label>
-                                <input type="email" id="email" name="email" placeholder="p. ej.: ada.lovelace@gmail.com"
-                                    required>
+                                <input type="email" id="email" name="email" placeholder="p. ej.: ada.lovelace@gmail.com" required>
                             </div>
                             <div>
                                 <label for="mensaje" class="bold-600">Mensaje *</label>
-                                <textarea id="mensaje" name="mensaje" placeholder="Escriba un mensaje aqui" required></textarea>
+                                <textarea class="textarea-contacto" id="mensaje" name="mensaje" placeholder="Escriba un mensaje aqui" required></textarea>
                             </div>
                             <label>
-                                <input class="buttom-enviar bold-600" type="submit" value="Enviar">
+                                <input class="buttom buttom-enviar bold-600" type="submit" value="Enviar">
                             </label>
                         </fieldset>
                     </form>
@@ -282,22 +283,22 @@
     <footer class="contenedor-general pie-de-pag">
         <!-- navegacion del footer -->
         <ul class="nav-pie">
-            <li class="item-pie">
+            <li class="item-pie bold-600">
                 <a href="#HOLA">
                     HOLA
                 </a>
             </li>
-            <li class="item-pie">
+            <li class="item-pie bold-600">
                 <a href="#CONOCIMIENTOS">
                     CONOCIMIENTOS
                 </a>
             </li>
-            <li class="item-pie">
+            <li class="item-pie bold-600">
                 <a href="#PROYECTOS">
                     PROYECTOS
                 </a>
             </li>
-            <li class="item-pie">
+            <li class="item-pie bold-600">
                 <a href="#CONTACTO">
                     CONTACTO
                 </a>
@@ -326,7 +327,7 @@
                 </a>
             </li>
         </ul>
-        <p class="margin-top">
+        <p class="margin-top bold-600">
             Hecho con ❤️ por Celeste Muñoz
         </p>
     </footer>

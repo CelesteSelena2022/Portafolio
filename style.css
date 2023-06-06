@@ -3,7 +3,6 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-weight: 300;
 }
 html,
 body {
@@ -15,8 +14,10 @@ html{
 body{
     width: 100%;
     font-size: 12rem;
+    color: #691E06;
 }
 
+/* propiedades reutilizadas para las seccines */
 .contenedor-general{
     width: 100%;
     height: 100%;
@@ -42,7 +43,7 @@ body{
     font-weight: 900;
 }
 
-/* width para los contenedores */
+/* width para las secciones de conocimiento y cita */
 
 .contenedor-85{
     width: 85%;
@@ -56,38 +57,51 @@ body{
     margin-top: 2em;
 }
 
+/* propiedad reutilizable para titulos */
+.titulo{
+    font-size: 40rem;
+}
+
+/* comienzo de estilos de header y nav */
+
 .contenedor-header{
+    display: flex;
     justify-content: center;
     width: 100%;
     box-shadow: #BB4D00 0px 25px 20px -20px;
     background-color: #FBBA72;
+    /* agrego z-index para que pueda vizualizarse el box-shadow */
     position: relative;
     z-index: 1;
 }
 
 .nav-header{
+    display: flex;
     justify-content: end;
     height: 70rem;
     width: 77%;
 }
 
 .nav-lista{
+    display: flex;
     list-style: none;
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 53%;
+    align-items: center;
 }
 
-.nav-item{
-    align-content: center;
-    flex-wrap: wrap;
-}
-.buttom-contacto{
+/* buttom general */
+.buttom{
     padding: 0.7em 2em;
     background-color: #BB4D00;
     color: white;
     border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 a {
@@ -95,15 +109,19 @@ a {
     color: inherit;
 }
 
+/* fin de estilos de header y nav */
+
 /* inicio de estilos de la seccion de presentacion */
 .presentacion{
     background-color: #FBBA72;
+    justify-content: space-evenly;
 }
 
 .contenido-nombre{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 40%;
 }
 
 .bienvenida-presentacion{
@@ -112,30 +130,26 @@ a {
 }
 
 .nombre-presentacion{
-    font-size: 40rem;
+    font-size: 48rem;
     color: #BB4D00;
 }
 
 /* clase reutilizable */
 .descripcion{
-    color: #691E06;
-    font-size: 16rem ;
+    font-size: 14rem;
+    font-weight: 400;
 }
 /* --------------- */
 
 .buttom-presentacion{
-    display: flex;
-    justify-content: center;
-    background-color: #BB4D00;
-    width: 30%;
-    padding: 1em;
-    border-radius: 50rem;
-    color: white;
+    width: 38%;
+    height: 40rem;
 }
 
 .contenido-imagen{
     display: flex;
     justify-content: center;
+    width: 40%;
 }
 
 .contenedor-img{
@@ -160,7 +174,9 @@ img{
 /* inicio de estilos de la seccion de conocimientos */
 
 .conocimientos{
-    background-color: #fbb05b ;
+    background-color: #fbb05b;
+    justify-content: center;
+    display: flex;
 }
 
 .contenido-conocimientos{
@@ -171,19 +187,19 @@ img{
     max-width: 1100px;
 }
 
-.descripcion-conocimientos{
-    width: 30%;
-    color: #691E06;
+.titulo-conocimientos{
+    font-size: 40rem;
 }
 
+.descripcion-conocimientos{
+    width: 30%;
+}
+
+/* clases reutilizables */
 .items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.item-conocimientos{
-    width: 85%;
 }
 
 .item{
@@ -193,10 +209,13 @@ img{
     margin: 1em;
     background-color: white;
 }
+/* ------------------- */
 
 .icon-conocimientos{
     width: 210rem;
+    height: 170rem;
 }
+
 /* estilos de iconos de la seccion de conocimientos (color y tamaño) */
 .icon-nombre{
     font-size: 15rem;
@@ -228,6 +247,7 @@ img{
 /* fin de estilos de la seccion de conocimientos */
 
 /* inicio de estilos de la seccion de cita */
+
 .cita{
     display: flex;
     justify-content: center;
@@ -236,16 +256,8 @@ img{
     color: white;
 }
 
-.contenido-cita{
-    width: 85%;
-}
-
 .titulo-cita{
     font-size: 80rem;
-}
-
-.descripcion-cita{
-    font-size: 15rem;
 }
 
 .autor-cita{
@@ -269,16 +281,8 @@ img{
     flex-direction: column;
 }
 
-.titulo-proyectos{
-    font-weight: 800;
-    color: #691E06;
-    font-size: 35rem;
-}
-
 .descripcion-proyectos{
     width: 40%;
-    color: #691E06;
-    font-size: 16rem ;
 }
 
 /* 
@@ -324,15 +328,14 @@ img{
     font-size: 14rem;
 }
 
+/* clase reutilizable */
 .centrado{
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
 }
-/* .prueba{
-    padding: 0.5em 0.5em 0em 0.5em;
-} */
+/* ---------------------- */
 
 /* fin de estilos de la seccion de proyectos */
 
@@ -346,10 +349,10 @@ img{
 }
 
 .contenedor-contacto{
-    background-color: white;
+    background-color: white ;
     padding: 4em;
     border-radius: 12rem;
-    width: 90%;
+    max-width: 900px;
     justify-content: space-around;
 }
 
@@ -361,9 +364,14 @@ img{
     font-size: 35rem;
 }
 
+.icon-contacto{
+    font-size: 14rem;
+}
+
 ul{
     list-style: none;
 }
+
 /* estilos de form */
 
 fieldset{
@@ -375,49 +383,42 @@ fieldset{
     justify-content: space-between;
 }
 
-.nombre-from{
+.contenedor-nombre{
     width: 45%;
-    flex-direction: column;
-    display: flex;
 }
 
-.apellido-from{
-    width: 45%;
-    flex-direction: column;
-    display: flex;
-}
-
-input{
-    width: 100%;
-    border-radius: 12rem;
-    border: none;
-    background-color: #f6f7fb;
-}
-
-.email-form{
+.column{
     display: flex;
     flex-direction: column;
 }
 
-form textarea, input {
+textarea, input {
     margin: 0.5em 0em 1em 0em;
     padding: 0.5em;
+    width: 100%;
+    border-radius: 12rem;
+    border: none;
+    background-color: #fbb05b;
 }
 
-textarea {
+input::placeholder{
+    color: #691E06;
+    font-weight: 500;
+}
+
+textarea::placeholder{
+    color: #691E06;
+    font-weight: 500;
+    font-size: 11rem;
+}
+
+.textarea-contacto{
     width: 100%;
     height: 150rem;
-    border-radius: 12rem;
-    background-color: #f6f7fb;
-    border: none;
 }
 
 .buttom-enviar{
     width: 30%;
-    padding: 0.8em 0.5em;
-    border-radius: 30rem;
-    background-color: #BB4D00;
-    color: white;
 }
 
 /* fin de estilos de la seccion de formulario */
@@ -425,10 +426,11 @@ textarea {
 /* inicio de estilos del footer */
 
 .pie-de-pag{
-    background-color: #BB4D00;
+    background-color: #691E06;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .nav-pie{
@@ -460,6 +462,7 @@ textarea {
 
 .icon-redes{
     font-size: 15rem;
+    color: #4e1704;
 }
 
 /* fin de estilos del footer */
