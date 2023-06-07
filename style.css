@@ -353,6 +353,7 @@ img{
 
 .contenedor-contacto{
     background-color: white ;
+    border: 1px solid #691E06;
     padding: 4em;
     border-radius: 12rem;
     max-width: 900px;
@@ -365,6 +366,10 @@ img{
 
 .titulo-contacto{
     font-size: 35rem;
+}
+
+.descripcion-contacto{
+    max-width: 400px;
 }
 
 .icon-contacto{
@@ -474,3 +479,94 @@ textarea::placeholder{
 }
 
 /* fin de estilos del footer */
+
+/* aplicacion de @media */
+
+@media (max-width:1100px) {
+    .contenedor-header{
+        display: none;
+    }
+
+    .presentacion{
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contenido-imagen{
+        margin-top: 3em;
+        width: 100%;
+    }
+
+    .contenido-nombre{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width:900px) {
+    .contenido-conocimientos{
+        width: 100%;
+    }
+
+    .contenedor-items{
+        width: 100%;
+    }
+
+    .contenedor-contacto{
+        flex-direction: column;
+        border: transparent;
+        padding: 0em 2em;
+    }
+
+    .contenido-contacto{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .buttom-enviar{
+        width: 20%;
+    }
+
+    .redes-contacto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icon-contacto{
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-pie{
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    .nombre-apellido-form{
+        flex-direction: column;
+    }
+
+    .contenedor-nombre{
+        width: 100%;
+    }
+}
+
+@media (max-width:590px) {
+    .icon-contacto{
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 30rem;
+    }
+
+    .titulo-contacto{
+        font-size: 30rem;
+    }
+}
