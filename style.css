@@ -203,7 +203,7 @@ img{
 }
 
 .item{
-    padding: 3em 0em;
+    padding: 2em 0em;
     border: 1px solid #BB4D00;
     border-radius: 8rem;
     margin: 1em;
@@ -214,6 +214,9 @@ img{
 .icon-conocimientos{
     width: 210rem;
     height: 170rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* estilos de iconos de la seccion de conocimientos (color y tamaño) */
@@ -320,7 +323,7 @@ img{
 }
 
 .contenedor-img-item{
-    height: 80%;
+    height: 90%;
 }
 
 .nombre-item{
