@@ -25,9 +25,9 @@ body{
     text-align: center;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
     .contenedor-general{
-        padding: 2em 0em;
+        padding: 2em 1em;
     }
 }
 
@@ -476,10 +476,10 @@ img{
     }
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .contenedor-contacto {
-        padding: 0.5em;
-        width: 90%;
+        padding: 1em;
+        width: 100%;
     }
 }
 
