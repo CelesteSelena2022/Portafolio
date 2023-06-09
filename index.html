@@ -17,22 +17,22 @@
             <!-- lista de navegacion de nav -->
             <ul class="nav-lista">
                 <li>
-                    <a href="#HOLA" class="bold-600">
+                    <a href="#HOLA" class="enlace">
                         HOLA
                     </a>
                 </li>
                 <li>
-                    <a href="#CONOCIMIENTOS" class="bold-600">
+                    <a href="#CONOCIMIENTOS" class="enlace">
                         CONOCIMIENTOS
                     </a>
                 </li>
                 <li>
-                    <a href="#PROYECTOS" class="bold-600">
+                    <a href="#PROYECTOS" class="enlace">
                         PROYECTOS
                     </a>
                 </li>
                 <li class="buttom">
-                    <a href="#CONTACTO" class="bold-600">
+                    <a href="#CONTACTO" class="enlace">
                         CONTACTO
                     </a>
                 </li>
@@ -43,16 +43,16 @@
         <!-- comienza seccion de presentacion -->
         <section class="contenedor-general presentacion is-flex" id="HOLA">
             <div class="contenido-nombre">
-                <span class="bold-800 bienvenida-presentacion">
+                <span class="bienvenida-presentacion">
                     ¡Hola! Soy
                 </span>
-                <h1 class="bold-900 margin-bottom nombre-presentacion">
+                <h1 class="nombre-presentacion">
                     Celeste Muñoz
                 </h1>
-                <p class="descripcion">
+                <p class="descripcion descripcion-presentacion">
                     Desarrolladora Front-End, fan de la musica clasica y de la naturaleza
                 </p>
-                <a href="#PROYECTOS" class="buttom buttom-presentacion margin-top bold-600">
+                <a href="#PROYECTOS" class="buttom buttom-presentacion enlace">
                     LO QUE HAGO
                 </a>
             </div>
@@ -67,10 +67,10 @@
         <!-- comienza seccion de conocimientos -->
         <section class="contenedor-general conocimientos" id="CONOCIMIENTOS">
             <div class="contenido-conocimientos">
-                <h2 class="bold-800 margin-bottom titulo">
+                <h2 class="titulo">
                     Mis conocimientos
                 </h2>
-                <p class="descripcion descripcion-conocimientos margin-bottom">
+                <p class="descripcion descripcion-conocimientos">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur
                     vel ab quas
                     architecto.
@@ -79,37 +79,37 @@
                 <div class="items contenedor-85">
                     <figure class="item icon-conocimientos ">
                         <i class="fa-brands fa-html5"></i>
-                        <figcaption class="bold-700 icon-nombre">
+                        <figcaption class="icon-nombre">
                             HTML 5
                         </figcaption>
                     </figure>
                     <figure class="item icon-conocimientos">
                         <i class="fa-brands fa-css3-alt"></i>
-                        <figcaption class="bold-700 icon-nombre">
+                        <figcaption class="icon-nombre">
                             CSS 3
                         </figcaption>
                     </figure>
                     <figure class="item icon-conocimientos">
                         <i class="fa-brands fa-sass"></i>
-                        <figcaption class="bold-700 icon-nombre">
+                        <figcaption class="icon-nombre">
                             Sass
                         </figcaption>
                     </figure>
                     <figure class="item icon-conocimientos">
                         <i class="fa-brands fa-js"></i>
-                        <figcaption class="bold-700 icon-nombre">
+                        <figcaption class="icon-nombre">
                             JavaScript
                         </figcaption>
                     </figure>
                     <figure class="item icon-conocimientos">
                         <i class="fa-brands fa-react"></i>
-                        <figcaption class="bold-700 icon-nombre">
+                        <figcaption class="icon-nombre">
                             React
                         </figcaption>
                     </figure>
                     <figure class="item icon-conocimientos">
                         <i class="fa-brands fa-git-alt"></i>
-                        <figcaption class="bold-700 icon-nombre">
+                        <figcaption class="icon-nombre">
                             GIT
                         </figcaption>
                     </figure>
@@ -119,85 +119,91 @@
         <!-- comienzo de la seccion de cita -->
         <section class="contenedor-general cita">
             <div class="contenedor-85">
-                <span class="titulo-cita bold-900">
+                <span class="comillas-cita">
                     <i class="fa-solid fa-quote-right"></i>
                 </span>
-                <p class="descripcion margin-top">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore temporibus fugit accusamus natus ab
-                    reiciendis, excepturi eligendi odio sint commodi accusantium delectus adipisci distinctio ipsum
-                    tempore alias nam iste minima?
-                </p>
-                <p class="bold-800 margin-top autor-cita">
-                    Someone
-                </p>
+                <blockquote class="contenido-cita">
+                    <q class="texto-cita">
+                        Somos lo que hacemos <em>repetidamente</em>. la <em>excelencia</em> por tanto no es un acto sino un <em>hábito</em>.
+                    </q>
+                    <cite class="autor-cita">
+                        Aristóteles
+                    </cite>
+                    <q class="texto-cita">
+                        La única <em>verdadera</em> sabiduría está en <em>saber</em> que no sabes <em>nada</em>
+                    </q>
+                    <cite class="autor-cita">
+                        Sócrates
+                    </cite>
+                </blockquote>
             </div>
         </section>
         <!-- comienzo de la seccion proyectos -->
         <section class="contenedor-general proyectos" id="PROYECTOS">
             <div class="contenido-proyectos">
-                <h2 class="titulo bold-800 margin-bottom">
+                <h2 class="titulo">
                     Mis proyectos
                 </h2>
-                <p class="descripcion descripcion-proyectos margin-bottom">
+                <p class="descripcion descripcion-proyectos">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id,
                     nesciunt?
                 </p>
                 <!-- proyectos -->
-                <div class="contenedor-items items margin-top">
-                    <a href="https://celesteselena2022.github.io/Portafolio/" target="_blank">
+                <div class="contenedor-items">
+                    <a href="https://celesteselena2022.github.io/Portafolio/" target="_blank" class="enlace">
                         <figure class="item item-proyectos">
                             <div class="contenedor-img-item">
                                 <img src="./img/portfolio.jpg" alt="imagen de portada del portfolio">
                             </div>
-                            <figcaption class="bold-600 centrado nombre-item">Portfolio</figcaption>
+                            <figcaption class="centrado nombre-item">Portfolio</figcaption>
                         </figure>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="#" target="_blank" class="enlace">
                         <figure class="item item-proyectos">
                             <div class="contenedor-img-item">
                                 <img src="./img/generador de memes.jpg" alt="">
                             </div>
-                            <figcaption class="bold-600 centrado nombre-item">Generador de memes</figcaption>
+                            <figcaption class="centrado nombre-item">Generador de memes</figcaption>
                         </figure>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank" class="enlace">
                         <figure class="item item-proyectos">
                             <div class="contenedor-img-item">
                                 <img src="./img/match 3.jpg" alt="">
                             </div>
-                            <figcaption class="bold-600 centrado nombre-item">Match 3</figcaption>
+                            <figcaption class="centrado nombre-item">Match 3</figcaption>
                         </figure>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank" class="enlace">
                         <figure class="item item-proyectos">
                             <div class="contenedor-img-item">
                                 <img src="./img/controlador de gastos.jpg" alt="">
                             </div>
-                            <figcaption class="bold-600 centrado nombre-item">Controlador de gastos</figcaption>
+                            <figcaption class="centrado nombre-item">Controlador de gastos</figcaption>
                         </figure>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank" class="enlace">
                         <figure class="item item-proyectos">
                             <div class="contenedor-img-item">
                                 <img src="./img/administrador de reuniones.jpg" alt="">
                             </div>
-                            <figcaption class="bold-600 centrado nombre-item">Administrador de reuniones</figcaption>
+                            <figcaption class="centrado nombre-item">Administrador de reuniones</figcaption>
                         </figure>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank" class="enlace">
                         <figure class="item item-proyectos">
                             <div class="contenedor-img-item">
                                 <img src="./img/todo app.jpg" alt="">
                             </div>
-                            <figcaption class="bold-600 centrado nombre-item">Todo app</figcaption>
+                            <figcaption class="centrado nombre-item">Todo app</figcaption>
                         </figure>
                     </a>
-                    <a href="#">
+                    <a href="#" target="_blank" class="enlace">
                         <figure class="item item-proyectos">
                             <div class="contenedor-img-item">
                                 <img src="./img/buscador de peliculas.jpg" alt="">
                             </div>
-                            <figcaption class="bold-600 centrado nombre-item">Buscador de peliculas</figcaption>
+                            <figcaption class="centrado nombre-item">Buscador de peliculas</figcaption>
                         </figure>
                     </a>
                 </div>
@@ -208,7 +214,7 @@
             <div class="contenedor-contacto is-flex">
                 <div class="contenido-contacto">
                     <section>
-                        <h2 class="bold-800 titulo-contacto margin-bottom">
+                        <h2 class="titulo-contacto">
                             Contactame
                         </h2>
                         <p class="descripcion descripcion-contacto">
@@ -219,27 +225,27 @@
                         </p>
                     </section>
                     <!-- redes sociales de contacto -->
-                    <ul class="margin-top redes-contacto" aria-label="Links de redes sociales">
-                            <li class="margin-top icon-contacto is-flex">
-                                <a href="https://www.facebook.com/selee.munoz.31/" aria-label="Facebook">
+                    <ul class="lista-contactame" aria-label="Links de redes sociales">
+                            <li class="icon-contacto">
+                                <a href="https://www.facebook.com/selee.munoz.31/" aria-label="Facebook" class="enlace">
                                 <i class="fa-brands fa-facebook-f icon-redes-contacto" aria-hidden="true"></i>
                                 Selee Muñoz
                                 </a>
                             </li>
-                            <li class="margin-top icon-contacto">
-                                <a href="https://github.com/CelesteSelena2022" aria-label="Github">
+                            <li class="icon-contacto">
+                                <a href="https://github.com/CelesteSelena2022" aria-label="Github" class="enlace">
                                 <i class="fa-brands fa-github-alt icon-redes-contacto" aria-hidden="true"></i>
                                 CelesteSelena2022
                                 </a>
                             </li>
-                            <li class="margin-top icon-contacto">
-                                <a href="https://www.linkedin.com/in/celeste-selena-mu%C3%B1oz/" aria-label="linkedin">
+                            <li class="icon-contacto">
+                                <a href="https://www.linkedin.com/in/celeste-selena-mu%C3%B1oz/" aria-label="linkedin" class="enlace">
                                 <i class="fa-brands fa-linkedin-in icon-redes-contacto" aria-hidden="true"></i>
                                 Celeste Selena Muñoz
                                 </a>
                             </li>
-                            <li class="margin-top icon-contacto">
-                                <a href="selenamunoz196@gmail" aria-label="Email">
+                            <li class="icon-contacto">
+                                <a href="selenamunoz196@gmail" aria-label="Email" class="enlace">
                                 <i class="fa-solid fa-envelope icon-redes-contacto" aria-hidden="true"></i>
                                 selenamunoz196@gmail.com
                                 </a>
@@ -250,27 +256,27 @@
                 <section class="contenido-contacto">
                     <form>
                         <fieldset>
-                            <legend class="bold-800 titulo-contacto margin-bottom">Escribeme</legend>
+                            <legend class="titulo-contacto">Escribeme</legend>
                             <div class="is-flex nombre-apellido-form">
                                 <div class="contenedor-nombre column">
-                                    <label for="nombre" class="bold-600">Nombre *</label>
+                                    <label for="nombre">Nombre *</label>
                                     <input type="text" id="nombre" name="Nombre" placeholder="p. ej.: Ada" aria-label="Nombre" required>
                                 </div>
-                                <div class="apellido-from column contenedor-nombre">
-                                    <label for="apellido" class="bold-600">Apellido *</label>
+                                <div class="column contenedor-nombre">
+                                    <label for="apellido">Apellido *</label>
                                     <input type="text" id="apellido" name="Apellido" placeholder="p. ej.: Lovelace" aria-label="Apellido" required>
                                 </div>
                             </div>
                             <div class="column">
-                                <label for="email" class="bold-600">Email *</label>
+                                <label for="email">Email *</label>
                                 <input type="email" id="email" name="Email" placeholder="p. ej.: ada.lovelace@gmail.com" aria-label="Email" required>
                             </div>
                             <div>
-                                <label for="mensaje" class="bold-600">Mensaje *</label>
+                                <label for="mensaje">Mensaje *</label>
                                 <textarea class="textarea-contacto" id="mensaje" name="Mensaje" placeholder="Escriba un mensaje aqui" aria-label="Mensaje" required></textarea>
                             </div>
                             <label>
-                                <input class="buttom buttom-enviar bold-600" type="submit" value="Enviar">
+                                <input class="buttom" type="submit" value="Enviar">
                             </label>
                         </fieldset>
                     </form>
@@ -283,52 +289,52 @@
     <footer class="contenedor-general pie-de-pag">
         <!-- navegacion del footer -->
         <ul class="nav-pie">
-            <li class="item-pie bold-600">
-                <a href="#HOLA">
+            <li class="item-pie">
+                <a href="#HOLA" class="enlace">
                     HOLA
                 </a>
             </li>
-            <li class="item-pie bold-600">
-                <a href="#CONOCIMIENTOS">
+            <li class="item-pie">
+                <a href="#CONOCIMIENTOS" class="enlace">
                     CONOCIMIENTOS
                 </a>
             </li>
-            <li class="item-pie bold-600">
-                <a href="#PROYECTOS">
+            <li class="item-pie">
+                <a href="#PROYECTOS" class="enlace">
                     PROYECTOS
                 </a>
             </li>
-            <li class="item-pie bold-600">
-                <a href="#CONTACTO">
+            <li class="item-pie">
+                <a href="#CONTACTO" class="enlace">
                     CONTACTO
                 </a>
             </li>
         </ul>
         <!-- redes sociales del footer -->
-        <ul class="redes-footer margin-top">
+        <ul class="redes-footer">
             <li>
-                <a class="contenedor-icon" aria-label="t
+                <a class="contenedor-icon enlace" aria-label="t
                 facebook" href="https://www.facebook.com/selee.munoz.31/">
                     <i class="fa-brands fa-facebook-f icon-redes"></i>
                 </a>
             </li>
             <li>
-                <a class="contenedor-icon" aria-label="github" href="https://github.com/CelesteSelena2022">
+                <a class="contenedor-icon enlace" aria-label="github" href="https://github.com/CelesteSelena2022">
                     <i class="fa-brands fa-github-alt icon-redes"></i>
                 </a>
             </li>
             <li>
-                <a class="contenedor-icon" aria-label="linkedin" href="https://www.linkedin.com/in/celeste-selena-mu%C3%B1oz/">
+                <a class="contenedor-icon enlace" aria-label="linkedin" href="https://www.linkedin.com/in/celeste-selena-mu%C3%B1oz/">
                     <i class="fa-brands fa-linkedin-in icon-redes"></i>
                 </a>
             </li>
             <li>
-                <a class="contenedor-icon" aria-label="email" href="selenamunoz196@gmail.com">
+                <a class="contenedor-icon enlace" aria-label="email" href="selenamunoz196@gmail.com">
                     <i class="fa-solid fa-envelope icon-redes"></i>
                 </a>
             </li>
         </ul>
-        <p class="margin-top bold-600">
+        <p class="fin-footer">
             Hecho con ❤️ por Celeste Muñoz
         </p>
     </footer>
