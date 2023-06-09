@@ -124,6 +124,12 @@ body{
     }
 }
 
+@media (max-width:300px) {
+    .presentacion{
+        align-items: center;
+    }
+}
+
 .contenido-nombre{
     display: flex;
     flex-direction: column;
