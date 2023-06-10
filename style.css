@@ -476,7 +476,7 @@ img{
     }
 }
 
-@media (max-width:420px) {
+@media (max-width:440px) {
     .contenedor-contacto {
         padding: 2em;
         width: 100%;
@@ -578,14 +578,13 @@ ul{
 
 /* estilos de form */
 
-fieldset{
-    border: transparent;
-    font-weight: 600;
-}
-
 .nombre-apellido-form{
     width: 100%;
     justify-content: space-between;
+}
+
+form{
+    font-weight: 600;
 }
 
 .contenedor-nombre{
