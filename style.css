@@ -27,13 +27,13 @@ body{
 
 @media (max-width: 420px) {
     .contenedor-general{
-        padding: 2em 1em;
+        padding: 4em 2em;
     }
 }
 
 @media (max-width: 300px) {
     .contenedor-general{
-        padding: 0.5em 0em;
+        padding: 2em 1em;
     }
 }
 
@@ -161,10 +161,6 @@ body{
     color: #BB4D00;
     font-weight: 900;
     margin-bottom: 0.2em;
-}
-
-.descripcion-presentacion {
-    width: 40%;
 }
 
 /* clase reutilizable */
@@ -511,7 +507,7 @@ img{
 }
 
 .lista-contactame{
-    margin-top:2.5em;
+    margin-top:1.5em;
 }
 
 @media (max-width:900px) {
@@ -558,7 +554,7 @@ img{
     }
 
     .descripcion{
-        font-size: 12rem;
+        font-size: 13rem;
     }
 }
 
