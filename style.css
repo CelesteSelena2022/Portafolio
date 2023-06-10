@@ -202,12 +202,10 @@ body{
 }
 
 .contenedor-img{
-    /* width: 380rem;
-    height: 380rem; */
     flex-basis: 380rem;
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
     .contenedor-img {
         flex-basis: 300rem;
     }
