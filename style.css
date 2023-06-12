@@ -67,7 +67,7 @@ body{
     z-index: 1;
 }
 
-@media (max-width:1100px) {
+@media (max-width:1000px) {
     .contenedor-header{
         display: none;
     }
@@ -88,6 +88,12 @@ body{
     align-items: center;
 }
 
+/* pseudo-clases para lista del nav */
+.nav-lista li:hover:not(.buttom) {
+    color: #e36003;
+}
+/* ------------------ */
+
 /* buttom y enlace para reutilizar */
 .buttom{
     padding: 0.7em 2em;
@@ -101,6 +107,12 @@ body{
     max-width: 40%;
     font-weight: 600;
 }
+
+/* pseudo-clases para el buttom */
+.buttom:hover {
+    background-color: #e36003;
+}
+/* ------------------ */
 
 .enlace{
     text-decoration: none;
@@ -276,6 +288,16 @@ img{
     justify-content: center;
 }
 
+/* pseudo-clases para .item y su figcaption */
+.item:hover {
+    border: 2px solid #e36003;
+}
+
+.icon-conocimientos:hover .icon-nombre{
+    color: #e36003;
+}
+/* ------------------ */
+
 /* estilos de iconos de la seccion de conocimientos (color y tamaño) */
 .icon-nombre{
     font-size: 15rem;
@@ -438,6 +460,13 @@ img{
     font-weight: 600;
 }
 
+/* pseudo-clases para item y .nombre-item */
+
+.item:hover .nombre-item {
+    color: #e36003;
+}
+/* ------------------ */
+
 /* clase reutilizable */
 .centrado{
     display: flex;
@@ -508,6 +537,17 @@ img{
     margin-top:1.5em;
 }
 
+/* pseudo-clases para lista-contactame */
+.icon-contacto .enlace:hover {
+    color: #e36003;
+}
+
+.enlace:hover .icon-redes-contacto {
+    color: white;
+    background-color: #e36003;
+}
+/* ------------------ */
+
 @media (max-width:900px) {
     .lista-contactame {
         display: flex;
@@ -516,8 +556,13 @@ img{
 }
 
 .icon-contacto{
-    font-size: 14rem;
+    font-size: 13rem;
     margin-top:1.5em;
+}
+
+.contenedor-enlace {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 360px) {
@@ -568,7 +613,10 @@ img{
 
 .icon-redes-contacto{
     margin-right: 0.5em;
-    font-size: 20rem;
+    font-size: 14rem;
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
 }
 
 
@@ -666,6 +714,17 @@ textarea::placeholder{
     display: flex;
     margin: 1.5em 0em;
 }
+
+/* pseudo-clases para .redes-footer */
+.redes-footer .contenedor-icon:hover {
+    background-color: #4e1704;
+    border: 1px solid white;
+}
+
+.contenedor-icon:hover .icon-redes {
+    color: white;
+}
+/* ------------------- */
 
 .contenedor-icon{
     background-color: white;
