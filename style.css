@@ -658,6 +658,9 @@ img{
     width: 30rem;
     height: 30rem;
     transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul{
