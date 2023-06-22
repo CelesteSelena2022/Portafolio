@@ -63,8 +63,10 @@ body{
     box-shadow: #BB4D00 0px 25px 20px -20px;
     background-color: #FBBA72;
     /* agrego z-index para que pueda vizualizarse el box-shadow */
-    position: relative;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
 }
 
 @media (max-width:1000px) {
@@ -88,9 +90,22 @@ body{
     align-items: center;
 }
 
+.nav-item {
+    padding: 0.7em 1em;
+    border-radius: 20rem;
+}
+
+.nav-item {
+    transition: 0.2s;
+}
+
 /* pseudo-clases para lista del nav */
-.nav-lista li:hover:not(.buttom) {
+.nav-lista .nav-item:hover:not(.buttom) {
     color: #e36003;
+}
+
+.nav-lista .nav-item:active:not(.buttom) {
+    box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
 }
 /* ------------------ */
 
@@ -106,11 +121,17 @@ body{
     flex-wrap: wrap;
     max-width: 40%;
     font-weight: 600;
+    transition: 0.2s;
 }
 
 /* pseudo-clases para el buttom */
 .buttom:hover {
     background-color: #e36003;
+}
+
+.buttom:active {
+    box-shadow: rgb(187,77,0) 0px 1px 4px;
+    background-color: #a74601;
 }
 /* ------------------ */
 
@@ -286,6 +307,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 0.2s;
 }
 
 /* pseudo-clases para .item y su figcaption */
@@ -307,6 +329,7 @@ img{
 }
 .fa-brands{
     font-size: 65rem;
+    transition: 0.3s;
 }
 .fa-html5{
     color: #e54d26;
@@ -436,6 +459,12 @@ img{
     justify-content: center;
 }
 
+/* pseudo clases para item de la seccion proyectos */
+.item-proyectos:active {
+    box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
+}
+/* ----------------- */
+
 @media (max-width:310px) {
     .item-proyectos {
         width: 240rem;
@@ -534,7 +563,7 @@ img{
 }
 
 .lista-contactame{
-    margin-top:1.5em;
+    margin-top:1em;
 }
 
 /* pseudo-clases para lista-contactame */
@@ -557,13 +586,24 @@ img{
 
 .icon-contacto{
     font-size: 13rem;
-    margin-top:1.5em;
+    padding: 0.4em 0.4em 0.4em 0em;
+    border-radius: 20rem;
+    display: flex;
 }
 
 .contenedor-enlace {
     display: flex;
     align-items: center;
+    border-radius: 20rem;
+    padding: 0.5em;
+    transition: 0.2s;
 }
+
+/* pseudo clases para el contenedor del icon y nombre de la red social de contactame */
+.contenedor-enlace:active {
+    box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
+}
+/* ------------- */
 
 @media (max-width: 360px) {
     .icon-contacto{
@@ -617,8 +657,8 @@ img{
     border-radius: 50%;
     width: 30rem;
     height: 30rem;
+    transition: 0.2s;
 }
-
 
 ul{
     list-style: none;
@@ -661,8 +701,12 @@ textarea, input {
     border-radius: 12rem;
     border: none;
     background-color: #fbb05b;
+    outline: none;
+    border: none;
+    transition: 0.2s;
 }
 
+/* pseudo clases para input y textarea */
 input::placeholder{
     color: #691E06;
     font-weight: 500;
@@ -672,6 +716,10 @@ textarea::placeholder{
     color: #691E06;
     font-weight: 500;
     font-size: 11rem;
+}
+
+textarea, input:focus{
+    box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
 }
 
 .textarea-contacto{
@@ -696,6 +744,12 @@ textarea::placeholder{
     display: flex;
 }
 
+/* pseudo clases para la navegacion del footer */
+
+.nav-pie .item-pie:active{
+    box-shadow: rgb(252, 234, 221) 0px 1px 4px;
+}
+/* ---------------- */
 @media (max-width:700px) {
     @media (max-width: 700px) {
         .nav-pie{
@@ -742,6 +796,7 @@ textarea::placeholder{
 .icon-redes{
     font-size: 15rem;
     color: #4e1704;
+    transition: 0.1s;
 }
 
 .fin-footer{
