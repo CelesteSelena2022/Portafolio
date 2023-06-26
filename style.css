@@ -104,7 +104,7 @@ body{
     color: #e36003;
 }
 
-.nav-lista .nav-item:active:not(.buttom) {
+.nav-lista .nav-item:focus:not(.buttom) {
     box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
 }
 /* ------------------ */
@@ -130,8 +130,11 @@ body{
 }
 
 .buttom:active {
-    box-shadow: rgb(187,77,0) 0px 1px 4px;
     background-color: #a74601;
+}
+
+.buttom:focus {
+    box-shadow: rgb(187,77,0) 0px 1px 4px;
 }
 /* ------------------ */
 
@@ -433,12 +436,6 @@ img{
     }
 }
 
-/* @media (max-width:400px) {
-    .contenedor-items{
-        width: 100%;
-    }
-} */
-
 /*
 -----recordatorio--------
 
@@ -460,8 +457,12 @@ img{
 }
 
 /* pseudo clases para item de la seccion proyectos */
-.item-proyectos:active {
+.contenedor-items .item-proyectos:focus {
     box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
+}
+
+.item-proyectos:hover {
+    border: 2px solid #e36003;
 }
 /* ----------------- */
 
@@ -600,7 +601,7 @@ img{
 }
 
 /* pseudo clases para el contenedor del icon y nombre de la red social de contactame */
-.contenedor-enlace:active {
+.contenedor-enlace:focus {
     box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
 }
 /* ------------- */
@@ -657,9 +658,6 @@ img{
     border-radius: 50%;
     width: 30rem;
     height: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 0.2s;
 }
 
@@ -721,7 +719,11 @@ textarea::placeholder{
     font-size: 11rem;
 }
 
-textarea, input:focus{
+input:focus{
+    box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
+}
+
+textarea:focus{
     box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
 }
 
@@ -749,7 +751,7 @@ textarea, input:focus{
 
 /* pseudo clases para la navegacion del footer */
 
-.nav-pie .item-pie:active{
+.nav-pie .item-pie:focus{
     box-shadow: rgb(252, 234, 221) 0px 1px 4px;
 }
 /* ---------------- */
@@ -779,6 +781,16 @@ textarea, input:focus{
 }
 
 .contenedor-icon:hover .icon-redes {
+    color: white;
+}
+
+.contenedor-icon:focus {
+    background-color: #4e1704;
+    color: white;
+    box-shadow: rgb(252, 234, 221) 0px 1px 4px;
+}
+
+.contenedor-icon:focus .icon-redes {
     color: white;
 }
 /* ------------------- */
