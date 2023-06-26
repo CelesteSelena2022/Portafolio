@@ -2,7 +2,9 @@
 ![Imagen presentacion de mi portafolio](./img/portafolio2.jpg)
 ## Consigna
 Este es el primer proyecto a presentar a ADAITW, en donde realizamos la estructura y los estilos de nuestro portafolio web, utilizando las siguientes herramientas:
-![Imagen del icono de html5 y css](./img/html%20y%20css.png )
+<div style="text-align:center;">
+    ![Imagen del icono de html5 y css](./img/html%20y%20css.png)
+</div>
 ## Criterios de aceptación
 ### Los requisitos mínimos para que el proyecto sea considerado para la entrega son:
 ### Lista
