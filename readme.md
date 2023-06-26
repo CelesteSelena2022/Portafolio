@@ -1,7 +1,7 @@
 # **¡BIENVENIDO A MI PORTAFOLIO!** 
 ## Consigna
 Este es el primer proyecto a presentar a ADAITW, en donde realizamos la estructura y los estilos de nuestro portafolio web, utilizando las siguientes herramientas:
-<img src="https://www.nicepng.com/png/detail/141-1415510_psd-to-html-and-css3-html-css.png" text-align="center">
+<img src="https://www.nicepng.com/png/detail/141-1415510_psd-to-html-and-css3-html-css.png" alt="imagen de icon html y css">
 ## Criterios de aceptación
 ### Los requisitos mínimos para que el proyecto sea considerado para la entrega son:
 * Se debe respetar el siguiente [diseño](https://frontend-proyecto-portfolio.adaitw.org/)
