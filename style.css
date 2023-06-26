@@ -651,16 +651,16 @@ img{
     }
 }
 
-.icon-redes-contacto{
+.icon-redes-contacto {
     margin-right: 0.5em;
     font-size: 14rem;
     border-radius: 50%;
     width: 30rem;
     height: 30rem;
-    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
 
 ul{
