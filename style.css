@@ -99,6 +99,12 @@ body{
     transition: 0.2s;
 }
 
+/* utilice herencia para aumentar la especifidad, asi quito el color del body y el max-width de la clase buttom */
+.nav-lista .buttom {
+    color: white;
+    max-width: 80%;
+}
+
 /* pseudo-clases para lista del nav */
 .nav-lista .nav-item:hover:not(.buttom) {
     color: #e36003;
@@ -188,7 +194,6 @@ body{
 
 .bienvenida-presentacion{
     font-size: 24rem;
-    color: #691E06;
     font-weight: 800;
 }
 
@@ -327,7 +332,6 @@ img{
 .icon-nombre{
     font-size: 15rem;
     margin-top: 0.5em;
-    color: #691E06;
     font-weight: 700;
 }
 .fa-brands{

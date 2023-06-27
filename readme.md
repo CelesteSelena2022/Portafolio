@@ -21,3 +21,17 @@ Este es el primer proyecto a presentar a ADAITW, en donde realizamos la estructu
 * El repositorio en GitHub debe tener un readme adecuado
 
 [Ver sitio web deployado](https://celesteselena2022.github.io/Portafolio/)
+
+## profe Caro
+Quisiera comentarle un poco de los errores que puedo visualizar yo a la hora de ver el codigo y el proceso que llevo...
+* Comienzo diciendo que en la estructura del html tuve varias fallas al principio y fui solucionando, volvi a hacer un repaso al tema de la clase html5 y note etiquetas tales como "blockquote, cite, q y em" averigue como se utilizaban y las puse en practica
+* Tambien note que podia utilizar figure en vez de img en algunas partes para mejorar la accesibilidad.
+* En formularios, no supe mucho como funcionaban las etiquetas aria pero intente implementarlas
+* Si vamos a css, lo primero fue el uso de @media, al comienzo intente colocarlas al final pero pense que seria mas facil de leer si las colocaba debajo de la clase que generaba efecto, note que para que la @media funciara debia estar si o si debajo de la clase a la que generaba el efecto, asi que eso me genero problemas y creo que complico la legibilidad del codigo, a demas de que de esta forma tenia dos medidas iguales pero en diferentes partes, ya que no podia estar encima de la clase
+* Clases como column y centrado surgieron al final del codigo y no las implemente demasiado para no generar conflictos
+* No hice una buena implementacion de las pseudo-clases, de hecho solo utilice focus, active y hover. podria haber utilizado mas de selectores avanzados, intente implementar placeholder-shown pero luego de ver la forma en la que funcionaba senti que no era necesario.
+* En el readme tuve problemas al cambiar el tamaño de las img y en el centrado, tampoco sabia como implementar gif o emojis con movimiento asi que lo deje de lado
+* Cuando realice el responsive lo comence de desktop cuando debia visualizarse especiamente desde mobile, aun asi intente verificar donde comenzaba a romperse el diseño de ejemplo y tratar de que mi tp no se rompa antes de ello.
+* La imagen de presentacion debo cambiarla, de hecho hay varias cosas que voy a tratar de arreglar como la foto de perfil de mi github, y el github en si jeje
+* Me diverti mucho haciendo este tp, si bien no llegue a entregarlo a tiempo, puede visualizar las fechas de las modificacion de los commit y ver donde comence a trabajar fuera del tiempo estimado, creo que despues de eso teniamos una semana para realizar la reentrega. A pesar de trabajar fuera de tiempo lo quise hacer para intentar poner en practica lo aprendido, ya que "la calificacion es solo un numero", no pude realizar la sombra de la barra lateral, y ya no es momento para preguntar un tema tan viejo jaja.
+* Muchas gracias por enseñarnos siempre de la mejor manera y darnos de su tiempo aun fuera de horario de trabajo ❤️❤️❤️.
