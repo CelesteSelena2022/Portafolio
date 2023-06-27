@@ -457,7 +457,8 @@ img{
 }
 
 /* pseudo clases para item de la seccion proyectos */
-.contenedor-items .item-proyectos:focus {
+
+.contenedor-items .item-proyectos:focus{
     box-shadow: rgb(187,77,0) 0px 2px 4px 0px, rgb(187,77,0) 0px 2px 11px 0px;
 }
 
