@@ -440,6 +440,13 @@ img{
     }
 }
 
+@media (max-width: 683px) {
+    .contenedor-items {
+    width: 100%;
+    justify-content: center;
+    }
+}
+
 /*
 -----recordatorio--------
 
@@ -485,12 +492,22 @@ img{
     }
 }
 
+.item-proyectos figure {
+    height: 100%;
+}
+
+figure .nombre-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contenedor-img-item{
-    height: 90%;
+    height: 80%;
 }
 
 .nombre-item{
-    flex-grow: 1;
+    height: 20%;
     font-size: 14rem;
     font-weight: 600;
 }
@@ -501,16 +518,6 @@ img{
     color: #e36003;
 }
 /* ------------------ */
-
-/* clase reutilizable */
-.centrado{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-/* ---------------------- */
-
 /* fin de estilos de la seccion de proyectos */
 
 /* inicio de estilos de la seccion de formulario */
@@ -570,6 +577,12 @@ img{
 
 .lista-contactame{
     margin-top:1em;
+}
+
+.icon-contacto i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* pseudo-clases para lista-contactame */
